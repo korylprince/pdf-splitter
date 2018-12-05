@@ -16,6 +16,7 @@ func main() {
 	re := flag.String("re", "", "regular expression for value in PDF page content")
 	in := flag.String("in", "", "input PDF")
 	out := flag.String("out", "", "directory for outputing PDFs")
+	debug := flag.Bool("debug", false, "output extracted text for each page")
 	flag.Parse()
 
 	//check -re
@@ -73,6 +74,11 @@ func main() {
 		text, err := ex.ExtractText()
 		if err != nil {
 			log.Fatalf("Unable to extract PDF page %d text: %v\n", i, err)
+		}
+
+		if *debug {
+			fmt.Printf("Page %d text:\n", i+1)
+			fmt.Println(text)
 		}
 
 		//find regexp
