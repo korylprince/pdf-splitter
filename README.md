@@ -6,13 +6,15 @@ This is a simple utility to split a PDF file into separate pages. The pages are 
 
     Usage of pdf-splitter:
       -debug
-            output extracted text for each page
+    	output extracted text for each page
       -in string
             input PDF
       -out string
             directory for outputing PDFs
       -re string
             regular expression for value in PDF page content
+      -skip
+            skip unmatched pages
 
 # Example
 

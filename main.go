@@ -16,6 +16,7 @@ func main() {
 	re := flag.String("re", "", "regular expression for value in PDF page content")
 	in := flag.String("in", "", "input PDF")
 	out := flag.String("out", "", "directory for outputing PDFs")
+	skip := flag.Bool("skip", false, "skip unmatched pages")
 	debug := flag.Bool("debug", false, "output extracted text for each page")
 	flag.Parse()
 
@@ -84,7 +85,12 @@ func main() {
 		//find regexp
 		matches := matchRegexp.FindStringSubmatch(text)
 		if len(matches) != 2 {
-			log.Fatalln("Unable to locate identifier in PDF text")
+			if *skip {
+				log.Println("Skipping page", i)
+				continue
+			} else {
+				log.Fatalln("Unable to locate identifier in PDF text")
+			}
 		}
 
 		username := matches[1]
