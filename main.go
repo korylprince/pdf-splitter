@@ -8,8 +8,8 @@ import (
 	"path"
 	"regexp"
 
-	"github.com/unidoc/unidoc/pdf/extractor"
-	"github.com/unidoc/unidoc/pdf/model"
+	"github.com/unidoc/unipdf/v3/extractor"
+	"github.com/unidoc/unipdf/v3/model"
 )
 
 func main() {

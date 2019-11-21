@@ -22,4 +22,4 @@ This is a simple utility to split a PDF file into separate pages. The pages are 
 
 # License
 
-This utility relies heavily on the [UniDoc](https://github.com/unidoc/unidoc) library. This library uses a vendored version of UniDoc that removes the licensing code. This modification is done under their provided AGPLv3 license. Therefore this code is also licensed under AGPLv3.
+This utility relies heavily on the [UniDoc](https://github.com/unidoc/unipdf) library. This library uses a vendored version of UniDoc that removes the licensing code. This modification is done under their provided AGPLv3 license. Therefore this code is also licensed under AGPLv3.

@@ -1,0 +1,32 @@
+# github.com/unidoc/unipdf/v3 v3.3.0
+github.com/unidoc/unipdf/v3/common
+github.com/unidoc/unipdf/v3/common/license
+github.com/unidoc/unipdf/v3/contentstream
+github.com/unidoc/unipdf/v3/core
+github.com/unidoc/unipdf/v3/core/security
+github.com/unidoc/unipdf/v3/core/security/crypt
+github.com/unidoc/unipdf/v3/extractor
+github.com/unidoc/unipdf/v3/internal/ccittfax
+github.com/unidoc/unipdf/v3/internal/cmap
+github.com/unidoc/unipdf/v3/internal/jbig2
+github.com/unidoc/unipdf/v3/internal/jbig2/bitmap
+github.com/unidoc/unipdf/v3/internal/jbig2/decoder/arithmetic
+github.com/unidoc/unipdf/v3/internal/jbig2/decoder/huffman
+github.com/unidoc/unipdf/v3/internal/jbig2/decoder/mmr
+github.com/unidoc/unipdf/v3/internal/jbig2/reader
+github.com/unidoc/unipdf/v3/internal/jbig2/segments
+github.com/unidoc/unipdf/v3/internal/jbig2/writer
+github.com/unidoc/unipdf/v3/internal/sampling
+github.com/unidoc/unipdf/v3/internal/strutils
+github.com/unidoc/unipdf/v3/internal/textencoding
+github.com/unidoc/unipdf/v3/internal/transform
+github.com/unidoc/unipdf/v3/model
+github.com/unidoc/unipdf/v3/model/internal/fonts
+github.com/unidoc/unipdf/v3/ps
+# golang.org/x/image v0.0.0-20181116024801-cd38e8056d9b
+golang.org/x/image/tiff/lzw
+# golang.org/x/text v0.3.2
+golang.org/x/text/encoding
+golang.org/x/text/encoding/internal/identifier
+golang.org/x/text/transform
+golang.org/x/text/unicode/norm

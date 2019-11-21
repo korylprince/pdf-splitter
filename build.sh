@@ -10,9 +10,9 @@ for GOOS in darwin linux windows; do
         export GOOS
         export GOARCH
         if [ $GOOS = "windows" ]; then
-            go build -v -o build/pdf-splitter-$GOOS-$GOARCH.exe
+            go build -v -mod=vendor -o build/pdf-splitter-$GOOS-$GOARCH.exe
         else
-            go build -v -o build/pdf-splitter-$GOOS-$GOARCH
+            go build -v -mod=vendor -o build/pdf-splitter-$GOOS-$GOARCH
         fi
     done
 done
